@@ -35,5 +35,5 @@ Ensure XAMPP is installed on your device. If haven't installed yet, [https://www
 5. With that done, you can open any browser and go to the web address [localhost/phpmyadmin](url).
 6. In the phpmyadmin page, we need to create a new database called console_gaming.
 7. Select the console_gaming database. In there, select the import tab on top of the page. Select the schema.sql file (can be found inside api folder) and click import. From there, all the necessary data needed for the web application.
-8. Now, we can go the web address [localhost/fyp/http_dir/home.php](url) and you can explore the web based application. 
+8. Now, we can go the web address [localhost/fyp/http_dir/home.php](url) (or localhost/YOURFOLDERNAME/http_dir/hom.php) and you can explore the web based application. 
 
