@@ -3,8 +3,12 @@
 ## Creator
 Asyrani Syazwan Bin Yuhanis - 1211103222
 
+
+
 ## Overview
 This project aims to create a centralized platform that enables user to explore and understand the console market. The web based application utilized proper and easy to use UI and UX with visualizations which enhances the overall experience in learning the industry. 
+
+
 
 ## Features
 | Feature | Description |
@@ -16,8 +20,12 @@ This project aims to create a centralized platform that enables user to explore 
 | Region View | To identify the console market share of each region through a map visualization |
 | Subscriptions View | To find suitable subscriptions for users based on the platform, price and benefits |
 
+
+
 ## Requirements
 Ensure XAMPP is installed on your device. If haven't installed yet, [https://www.apachefriends.org/download.html](url) , follow this link and download the latest version of XAMPP based on your OS.
+
+
 
 ## Steps
 1. Download the files in the repository.
