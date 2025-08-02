@@ -8,6 +8,7 @@ This project aims to create a centralized platform that enables user to explore 
 
 ## Features
 | Feature | Description |
+|---------|-------------|
 | Console Market View | To view the overall console market and provide a generalized idea of the industry |
 | Console View | To view specific console details and useful knowledge regarding the selected console |
 | Compare View | To compare up to 3 consoles at a time and easily compare their details among one another |
@@ -15,7 +16,7 @@ This project aims to create a centralized platform that enables user to explore 
 | Region View | To identify the console market share of each region through a map visualization |
 | Subscriptions View | To find suitable subscriptions for users based on the platform, price and benefits |
 
-##Requirements
+## Requirements
 Ensure XAMPP is installed on your device. If haven't installed yet, [https://www.apachefriends.org/download.html](url) , follow this link and download the latest version of XAMPP based on your OS.
 
 ## Steps
