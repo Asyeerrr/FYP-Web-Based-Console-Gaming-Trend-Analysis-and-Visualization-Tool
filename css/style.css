@@ -1,0 +1,629 @@
+@font-face {
+    font-family: 'Urban Constructed';
+    src: url('../fonts/Urban Constructed-Regular.ttf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/*--------------------Header.php--------------------*/
+
+.navbar {
+    background-color: #060b48;
+    padding: 1em 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: sticky;
+
+}
+
+.nav-left,
+.nav-right {
+    display: flex;
+    gap: 2rem;
+    font-family: 'Urban Constructed';
+}
+
+.nav-left a {
+    color: #ffffff;
+    font-size: 23px;
+}
+
+.nav-right a {
+    color: #ffffff;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    color: #5271ff;
+}
+
+/*--------------------Footer.php--------------------*/
+.footer {
+    background-color: #060b48;
+    color: white;
+    padding: 2em;
+    font-family: sans-serif;
+    flex-direction: column;
+}
+
+.footer-title {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.footer-title h2 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20em;
+    padding-left: 25em;
+    flex-wrap: wrap;
+}
+
+.footer-left,
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.footer-right a {
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.face {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+
+/*--------------------HOME.PHP--------------------*/
+.home-body {
+    background-image: url('../images/home_background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* <--- This makes it stay in place */
+    margin: 0;
+    padding: 0; 
+    font-family: 'Inter', sans-serif; /* Ensure a consistent font */
+}
+
+/* Container wraps the whole page */
+.home-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main content grows to fill space */
+.home-content {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* centers horizontally */
+    align-items: center;     /* centers vertically */
+    color: white;
+    min-height: calc(100vh - 50px);
+    font-size: 30px;
+    text-align: center;
+}
+
+/*--------------------Market.php--------------------*/
+.market-body {
+    background-color: #000123;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.market-container {
+    min-width: 100vh;
+}
+
+.market-content {
+    min-height: calc(100vh - 50px);
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+.market-content h1 {
+    margin-bottom: 0px; 
+}
+
+.market-visual {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    padding: 1em;
+    padding-top: 0px;
+}
+
+.market-left,
+.market-right {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.market-left,
+.market-right{
+    justify-content: space-between;
+    gap: 0.5em;
+}
+
+.total-console-sold,
+.top-selling-console,
+.top-genre {
+    text-align: center;
+    color: white;
+    background-color: #2d8bba3a;
+    padding: 20px;
+    margin-bottom: 1em;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+
+/*--------------------console.php--------------------*/
+.console-body {
+    background-color: #000123;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.console-container {
+    min-width: 100vh;
+}
+
+.console-content {
+    min-height: calc(100vh - 50px);
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    padding: 1em;
+}
+
+.console-left,
+.console-right {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.console-upper-right,
+.console-lower-right{
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+  
+}
+
+.top-selling-games,
+.genre-distribution {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.console-sales,
+.esrb-rating {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+.console-upper-right,
+.console-lower-right {
+    justify-content: space-between;
+    gap: 0.5em;
+} 
+
+.console-title {
+    text-align: left;
+    font-size: 30px;
+    color: white;
+    margin-bottom: 1.1em;
+}
+
+.console-title h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.console-title select {
+    color: white;
+    background-color: #2d8bba;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 20px;
+    /* letter-spacing: 2px; */
+    font-weight: bold;
+    /* font-family: 'Urban Constructed'; */
+    
+}
+
+.console-details,
+.top-selling-games,
+.genre-distribution,
+.console-sales,
+.esrb-rating {
+    text-align: center;
+    color: white;
+    background-color: #2d8bba3a;
+    padding: 20px;
+    margin-bottom: 1em;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+/*--------------------compare.php--------------------*/
+.compare-body {
+    background-color: #000123;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.compare-container {
+    min-width: 100vh;
+}
+
+.compare-content {
+    min-height: calc(100vh - 50px);
+}
+
+.compare-content h1 {
+    margin-bottom: 0px;
+    color: white;
+    text-align: center;
+    font-size: 60px;
+
+}
+
+.compare-table {
+    background-color: #2d8bba3a;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 1em;
+    margin-top: 0px;
+}
+
+.compare-table table {
+    /* border: 2px solid white; */
+    width: 100%;
+    /* color: white; */
+    padding: 5px;
+
+}
+
+.compare-table thead {
+    background-color: #41b8d5;
+}
+
+.compare-table th, .compare-table td {
+    border: 2px solid white; /* add cell borders */
+    padding: 7px;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+
+.compare-table select {
+    color: white;
+    background-color: #2d8bba;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 20px;
+    width: 90%;
+    /* letter-spacing: 2px; */
+    font-weight: bold;
+    /* font-family: 'Urban Constructed'; */
+    
+}
+
+/*--------------------demographic.php--------------------*/
+
+.demo-body {
+    background-color: #000123;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.demo-container {
+    min-width: 100vh;
+}
+
+.demo-content {
+    min-height: calc(100vh - 50px);
+}
+
+.demo-content h1 {
+    text-align: center;
+    color: white;
+    font-size: 60px;
+}
+
+.demo-visual {
+    background-color: #2d8bba3a;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 1em;
+    margin-top: 0px;
+}
+
+.demo-map p {
+    font-size: 100px;
+    font-weight: bold;
+    justify-self: center;
+    align-items: center;
+    color: white;
+}
+
+/*--------------------games.php--------------------*/
+
+.games-body {
+    background-color: #000123;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.games-container {
+    min-width: 100vh;
+}
+
+.games-content {
+    min-height: calc(100vh - 50px);
+}
+
+.games-top {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.games-title h1 {
+    font-size: 60px;
+    color: white;
+    margin-bottom: 0px;
+}
+
+.games-search input{
+    background-color: #2d8bba;
+    font-size: 20px;
+    padding: 10px;
+    width: 400px;
+    margin-top: 50px;
+    margin-right: 20px;
+}
+
+.games-search input::placeholder {
+    color: white;
+}
+
+.games-result {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border: 1px solid #ccc;
+    z-index: 10;
+    display: none;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+#resultGames div {
+      padding: 8px;
+      cursor: pointer;
+    }
+
+#resultGames div:hover {
+    background-color: #f0f0f0;
+}
+
+.games-bottom {
+    /* justify-content: space-around; */
+    display: flex;
+    gap: 1em;
+    margin-top: 0px;
+}
+
+.games-bottom h4 {
+    font-size: 20px;
+    color: white;
+    margin: 7px;
+}
+
+.games-poster,
+.games-detail {
+    background-color: #2d8bba3a;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.games-poster {
+    width: 30%;
+    margin-right: 0px;
+    text-align: center;
+}
+
+.games-detail {
+    width: 70%;
+    margin-left: 0px;
+}
+
+
+
+
+/*--------------------subscriptions.php--------------------*/
+
+.sub-body {
+    background-color: #000123;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.sub-container {
+    min-width: 100vh;
+}
+
+.sub-content {
+    min-height: calc(100vh - 50px);
+}
+
+.sub-content h1 {
+    font-size: 60px;
+    color: white;
+    margin-bottom: 0px;
+    margin-left: 1em;
+}
+
+.sub-visual {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    margin-top: 0px;
+}
+
+.sub-table,
+.sub-filter {
+    background-color: #2d8bba3a;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-table {
+    width: 75%;
+}
+
+.sub-table thead {
+    background-color: #41b8d5;
+
+}
+
+.sub-table td,
+.sub-table th{
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid white;
+}
+
+.sub-form {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    /* width: 15%; */
+    color: white;
+    font-size: 20px;
+    
+
+}
+
+.sub-filter {
+    width: 100%;
+}
+
+.sub-filter h3 {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 5px;
+    margin-top: 0px;
+}
+
+.sub-filter hr {
+    border: none;
+    border-top: 4px solid #000123; /* or any color you want */
+    height: 1px;
+    width: 100%;
+    margin-top: 1em; /* optional spacing */
+    margin-bottom: 1em;
+
+}
+
+.sub-filter select {
+    color: white;
+    background-color: #2d8bba;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.sub-price{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub-benefits {
+  display: flex;
+  gap: 20px;
+
+}
+
+/* .sub-benefits h3 {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+} */
+
+.sub-benefits-columns {
+  flex: 1;
+}
+
+.sub-button {
+    background-color: #2d8bba;
+    color: white;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    width: 50%;
+    margin: auto;
+    font-weight: bold;
+}
+
+
